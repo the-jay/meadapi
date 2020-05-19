@@ -20,7 +20,8 @@ const forecast = (lat, long, callback) => {
           body.currently.temperature +
           ' degrees out. There is ' +
           body.currently.precipProbability +
-          '% chance of rain'
+          '% chance of rain, and the humidity is ' +
+          body.currently.humidity
       );
     }
   });
